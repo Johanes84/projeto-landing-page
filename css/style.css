@@ -1,0 +1,146 @@
+/* Estilos para Landing Page HTP Pro */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111111;
+    color: #ffffff;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 20px 0 30px;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.option-card {
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+.option-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.option-text {
+    flex-grow: 1;
+}
+
+.option-title {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.option-description {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.action-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.action-button:hover {
+    background-color: #ffef00;
+    transform: scale(1.05);
+}
+
+.main-button {
+    display: inline-block;
+    background: linear-gradient(145deg, #ff3a00, #ff9500);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 30px 0;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+
+.main-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.6);
+}
+
+.discount-badge {
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .option-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+    
+    .option-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .action-button {
+        margin-top: 15px;
+    }
+}
