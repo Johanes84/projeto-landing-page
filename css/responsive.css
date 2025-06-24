@@ -37,15 +37,15 @@
         height: 3px;
     }
     
-    /* Cards (AJUSTADO) */
+    /* Cards (REDUZIDO EM 5%) */
     .app-card,
     .option-card {
-        width: 96vw;
-        max-width: 96vw;
+        width: 91vw;         /* reduzido mais 5% */
+        max-width: 91vw;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-        aspect-ratio: 16/9;  /* Mantém o formato bonito, adapta pra 4/3 se quiser mais quadrado */
+        aspect-ratio: 16/9;
         height: auto;
         box-sizing: border-box;
     }
@@ -121,8 +121,8 @@
     
     .app-card,
     .option-card {
-        width: 99vw;
-        max-width: 99vw;
+        width: 95vw;        /* reduzido mais 5% aqui também */
+        max-width: 95vw;
         aspect-ratio: 16/9;
         margin-left: auto;
         margin-right: auto;
