@@ -1,13 +1,13 @@
 /* ============================================
-   RESPONSIVE CSS - HTP PRO (AJUSTADO)
+   RESPONSIVE CSS - HTP PRO (CORRIGIDO)
    ============================================ */
 
 /* Mobile Devices */
 @media (max-width: 768px) {
     /* Container */
     .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     /* Hero Section */
@@ -20,7 +20,7 @@
     
     /* App Section */
     .app-section {
-        padding: 30px 0;
+        padding: 30px 10px;
     }
     
     /* Typography */
@@ -37,26 +37,36 @@
         height: 3px;
     }
     
-    /* Cards (REDUZIDO EM 5%) */
+    /* Cards - AJUSTADO PARA NÃO CORTAR */
     .app-card,
     .option-card {
-        width: 91vw;         /* reduzido mais 5% */
-        max-width: 91vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
+        width: calc(100% - 30px);    /* Margem de segurança de 15px cada lado */
+        max-width: 400px;            /* Limite máximo para não ficar muito grande */
+        margin: 0 auto 20px auto;    /* Centralizado com margem inferior */
         aspect-ratio: 16/9;
         height: auto;
         box-sizing: border-box;
+        display: block;
+    }
+    
+    /* Ajuste específico para os cards da app-section */
+    .app-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
     
     .option-card-link {
-        margin-bottom: 15px;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: calc(100% - 30px);
+        max-width: 400px;
     }
     
     /* CTA Section */
     .final-cta {
-        padding: 50px 0;
+        padding: 50px 10px;
     }
     
     .cta-title {
@@ -79,7 +89,7 @@
     
     /* Footer */
     .footer {
-        padding: 40px 0 30px;
+        padding: 40px 10px 30px;
     }
     
     .social-links {
@@ -119,14 +129,19 @@
         font-size: 1.5rem;
     }
     
+    /* Cards ainda mais reduzidos para telas pequenas */
     .app-card,
     .option-card {
-        width: 95vw;        /* reduzido mais 5% aqui também */
-        max-width: 95vw;
+        width: calc(100% - 20px);    /* Margem menor para telas muito pequenas */
+        max-width: 350px;
         aspect-ratio: 16/9;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 20px auto;
         height: auto;
+    }
+    
+    .option-card-link {
+        width: calc(100% - 20px);
+        max-width: 350px;
     }
     
     .cta-title {
@@ -142,5 +157,17 @@
         width: 40px;
         height: 40px;
         font-size: 1rem;
+    }
+}
+
+/* Ajuste adicional para garantir que nada seja cortado */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Garante que todos os elementos respeitem o viewport */
+    * {
+        max-width: 100vw;
     }
 }
