@@ -1,12 +1,13 @@
 /* ============================================
-   RESPONSIVE CSS - HTP PRO
+   RESPONSIVE CSS - HTP PRO (AJUSTADO)
    ============================================ */
 
 /* Mobile Devices */
 @media (max-width: 768px) {
     /* Container */
     .container {
-        padding: 0 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     /* Hero Section */
@@ -36,12 +37,17 @@
         height: 3px;
     }
     
-    /* Cards */
+    /* Cards (AJUSTADO) */
     .app-card,
     .option-card {
-        max-width: 90%;
-        height: 200px;
+        width: 96vw;
+        max-width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20px;
+        aspect-ratio: 16/9;  /* Mantém o formato bonito, adapta pra 4/3 se quiser mais quadrado */
+        height: auto;
+        box-sizing: border-box;
     }
     
     .option-card-link {
@@ -115,7 +121,12 @@
     
     .app-card,
     .option-card {
-        height: 150px;
+        width: 99vw;
+        max-width: 99vw;
+        aspect-ratio: 16/9;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
     }
     
     .cta-title {
